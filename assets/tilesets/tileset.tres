@@ -127,20 +127,20 @@ points = PoolVector2Array( -6, -8, 8, -8, 8, 8, -6, 8 )
 custom_solver_bias = 0.0
 points = PoolVector2Array( -8, -8, 6, -8, 6, 8, -8, 8 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
+[sub_resource type="ConvexPolygonShape2D" id=33]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( -6, -8, 8, -8, 8, 7, -4, 4 )
+points = PoolVector2Array( -6, -8, 8, -8, 8, 6, -4, 4 )
 
-[sub_resource type="ConvexPolygonShape2D" id=27]
-
-custom_solver_bias = 0.0
-points = PoolVector2Array( -8, -8, 8, -8, 8, 7, -8, 7 )
-
-[sub_resource type="ConvexPolygonShape2D" id=28]
+[sub_resource type="ConvexPolygonShape2D" id=34]
 
 custom_solver_bias = 0.0
-points = PoolVector2Array( -8, -8, 6, -8, 4, 4, -8, 7 )
+points = PoolVector2Array( -8, -8, 8, -8, 8, 6, -8, 6 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( -8, -8, 6, -8, 4, 4, -8, 6 )
 
 [sub_resource type="ConvexPolygonShape2D" id=29]
 
@@ -780,7 +780,7 @@ points = PoolVector2Array( -8, -7, 6, -7, 6, 8, -8, 8 )
 46/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 26 ),
+"shape": SubResource( 33 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 46/z_index = 0
@@ -795,7 +795,7 @@ points = PoolVector2Array( -8, -7, 6, -7, 6, 8, -8, 8 )
 47/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 27 ),
+"shape": SubResource( 34 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 47/z_index = 0
@@ -810,7 +810,7 @@ points = PoolVector2Array( -8, -7, 6, -7, 6, 8, -8, 8 )
 48/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
-"shape": SubResource( 28 ),
+"shape": SubResource( 35 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8, 8 )
 } ]
 48/z_index = 0
@@ -1064,4 +1064,44 @@ points = PoolVector2Array( -8, -7, 6, -7, 6, 8, -8, 8 )
 73/navigation_offset = Vector2( 8, 8 )
 73/shapes = [  ]
 73/z_index = 0
+74/name = "Depth_Grass_Diagonal_1"
+74/texture = ExtResource( 1 )
+74/tex_offset = Vector2( 0, 0 )
+74/modulate = Color( 1, 1, 1, 1 )
+74/region = Rect2( 144, 112, 16, 16 )
+74/tile_mode = 0
+74/occluder_offset = Vector2( 8, 8 )
+74/navigation_offset = Vector2( 8, 8 )
+74/shapes = [  ]
+74/z_index = 0
+75/name = "Depth_Grass_Diagonal_2"
+75/texture = ExtResource( 1 )
+75/tex_offset = Vector2( 0, 0 )
+75/modulate = Color( 1, 1, 1, 1 )
+75/region = Rect2( 160, 112, 16, 16 )
+75/tile_mode = 0
+75/occluder_offset = Vector2( 8, 8 )
+75/navigation_offset = Vector2( 8, 8 )
+75/shapes = [  ]
+75/z_index = 0
+76/name = "Depth_Dirt_Corner_Top"
+76/texture = ExtResource( 1 )
+76/tex_offset = Vector2( 0, 0 )
+76/modulate = Color( 1, 1, 1, 1 )
+76/region = Rect2( 128, 112, 16, 16 )
+76/tile_mode = 0
+76/occluder_offset = Vector2( 8, 8 )
+76/navigation_offset = Vector2( 8, 8 )
+76/shapes = [  ]
+76/z_index = 0
+77/name = "Depth_Dirt_Corner_Bottom"
+77/texture = ExtResource( 1 )
+77/tex_offset = Vector2( 0, 0 )
+77/modulate = Color( 1, 1, 1, 1 )
+77/region = Rect2( 112, 112, 16, 16 )
+77/tile_mode = 0
+77/occluder_offset = Vector2( 8, 8 )
+77/navigation_offset = Vector2( 8, 8 )
+77/shapes = [  ]
+77/z_index = 0
 
