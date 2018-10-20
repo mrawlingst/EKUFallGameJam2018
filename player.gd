@@ -1,10 +1,12 @@
 extends KinematicBody2D
 
+export(int) var WALK_SPEED = 250
+
 const GRAVITY_VEC = Vector2(0, 900)
 const FLOOR_NORMAL = Vector2(0, -1)
 const SLOPE_SLIDE_STOP = 25.0
 const MIN_ONAIR_TIME = 0.1
-const WALK_SPEED = 250 # pixels/sec
+#const WALK_SPEED = 250 # pixels/sec
 const JUMP_SPEED = 480
 const SIDING_CHANGE_SPEED = 10
 const BULLET_VELOCITY = 1000
@@ -91,8 +93,8 @@ func _physics_process(delta):
 		else:
 			new_anim = "falling"
 
-	if shoot_time < SHOOT_TIME_SHOW_WEAPON:
-		new_anim += "_weapon"
+	#if shoot_time < SHOOT_TIME_SHOW_WEAPON:
+		#new_anim += "_weapon"
 
 	if new_anim != anim:
 		anim = new_anim

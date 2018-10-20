@@ -47,3 +47,4 @@ func _physics_process(delta):
 
 func hit_by_bullet():
 	state = STATE_KILLED
+	$CollisionShape2D.disabled = true
