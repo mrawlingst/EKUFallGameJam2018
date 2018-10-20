@@ -259,6 +259,7 @@ collision/safe_margin = 0.08
 motion/sync_to_physics = false
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Pickable", "Transform", "Z", "collision" ]
+health = 20
 
 [node name="enabler" type="VisibilityEnabler2D" parent="."]
 position = Vector2( 16.2569, 11.0034 )

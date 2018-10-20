@@ -237,36 +237,47 @@ editor/display_folded = true
 
 [node name="enemy 5" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 734.693, 1064.22 )
+health = 20
 
 [node name="enemy 6" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 707.665, 1225.05 )
+health = 20
 
 [node name="enemy 7" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 1125.21, 1053.06 )
+health = 20
 
 [node name="enemy 8" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 1292.11, 1059.24 )
+health = 20
 
 [node name="enemy 9" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 968.927, 766.466 )
+health = 20
 
 [node name="enemy 10" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 3080.34, 1807.61 )
+health = 20
 
 [node name="enemy 11" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 1457.6, 688.741 )
+health = 20
 
 [node name="enemy 12" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 1264.06, 571.713 )
+health = 20
 
 [node name="enemy 13" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 3590.85, 1114.86 )
+health = 20
 
 [node name="enemy 14" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 3546.2, 1356.19 )
+health = 20
 
 [node name="enemy 15" parent="enemies" instance=ExtResource( 6 )]
 position = Vector2( 2215.3, 1429.39 )
+health = 20
 
 [node name="parallax_bg" parent="." instance=ExtResource( 7 )]
 

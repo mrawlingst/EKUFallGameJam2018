@@ -80,3 +80,12 @@ _sections_unfolded = [ "Rect", "custom_fonts/font" ]
 [node name="snake" parent="enemies" instance=ExtResource( 5 )]
 position = Vector2( 257.19, 197.793 )
 
+[node name="snake2" parent="enemies" instance=ExtResource( 5 )]
+position = Vector2( 703.053, 264.996 )
+
+[node name="snake3" parent="enemies" instance=ExtResource( 5 )]
+position = Vector2( 1024.85, 365.799 )
+
+[node name="snake4" parent="enemies" instance=ExtResource( 5 )]
+position = Vector2( 566.063, 381.308 )
+
