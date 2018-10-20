@@ -24,16 +24,27 @@ var anim=""
 onready var sprite = $sprite
 
 enum ELEMENTS {
-	Wood,
-	Fire,
-	Earth,
-	Metal,
-	Water
+	Wood = 0,
+	Fire = 1,
+	Earth = 2,
+	Metal = 3,
+	Water = 4
 }
 
-var currentElement = ELEMENTS.Wood
+var currentElement
+var currentElementIndex
 var fire = preload("res://scenes/ability_fire.tscn").instance()
 var fire_pos
+var learnedElements = []
+
+func _ready():
+	learnedElements.push_back(ELEMENTS.Wood)
+	learnedElements.push_back(ELEMENTS.Fire)
+	#learnedElements.push_back(ELEMENTS.Earth)
+	print(learnedElements)
+	
+	currentElementIndex = 0
+	currentElement = learnedElements[currentElementIndex]
 
 func _physics_process(delta):
 	#increment counters
@@ -151,14 +162,19 @@ func _physics_process(delta):
 		$anim.play(anim)
 
 func cycle_elements(left):
+	if learnedElements.size() == 1:
+		return
+	
 	if left:
-		currentElement -= 1
-		if currentElement < 0:
-			currentElement = ELEMENTS.Water
+		currentElementIndex -= 1
+		if currentElementIndex < 0:
+			currentElementIndex = learnedElements.size() - 1
+		currentElement = learnedElements[currentElementIndex]
 	else:
-		currentElement += 1
-		if currentElement > ELEMENTS.size() - 1:
-			currentElement = ELEMENTS.Wood
+		currentElementIndex += 1
+		if currentElementIndex > learnedElements.size() - 1:
+			currentElementIndex = 0
+		currentElement = learnedElements[currentElementIndex]
 
 func getElementStr(element):
 	if element == ELEMENTS.Wood:

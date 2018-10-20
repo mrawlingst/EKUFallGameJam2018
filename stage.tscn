@@ -34,6 +34,7 @@ __meta__ = {
 }
 
 [node name="coins" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="coin" parent="coins" instance=ExtResource( 2 )]
 position = Vector2( 672, 1179 )
@@ -162,6 +163,7 @@ position = Vector2( 4236.75, 541.058 )
 position = Vector2( 4172.75, 541.058 )
 
 [node name="props" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="moving_platform" parent="props" instance=ExtResource( 3 )]
 position = Vector2( 1451.86, 742.969 )
@@ -229,7 +231,6 @@ position = Vector2( 1039.29, 409.746 )
 [node name="player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 251.684, 1045.6 )
 WALK_SPEED = 250
-BULLET_VELOCITY = 500
 
 [node name="enemies" type="Node" parent="."]
 editor/display_folded = true
