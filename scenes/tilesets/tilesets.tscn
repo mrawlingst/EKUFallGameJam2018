@@ -353,6 +353,7 @@ polygon = PoolVector2Array( -6, -7, 8, -7, 8, 8, -6, 8 )
 _sections_unfolded = [ "polygon" ]
 
 [node name="Dirt_Top_Middle_Blue" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 64, 32 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -576,6 +577,7 @@ polygon = PoolVector2Array( -4, -4, 8, -7, 8, 8, -6, 8 )
 _sections_unfolded = [ "polygon" ]
 
 [node name="Grass_Edge_Top_Middle" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 80, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -596,6 +598,7 @@ polygon = PoolVector2Array( -8, -7, 8, -7, 8, 8, -8, 8 )
 _sections_unfolded = [ "polygon" ]
 
 [node name="Grass_Edge_Top_Right" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 96, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
@@ -934,5 +937,33 @@ position = Vector2( 144, 96 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 256, 96, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Depth_Dirt_Corner_BR" type="Sprite" parent="."]
+position = Vector2( 0, 112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 80, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Depth_Dirt_Corner_BL" type="Sprite" parent="."]
+position = Vector2( 16, 112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 80, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Depth_Dirt_Corner_TR" type="Sprite" parent="."]
+position = Vector2( 0, 128 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 96, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Depth_Dirt_Corner_TL" type="Sprite" parent="."]
+position = Vector2( 16, 128 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 16, 16 )
 _sections_unfolded = [ "Region" ]
 
