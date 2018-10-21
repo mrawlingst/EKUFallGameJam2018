@@ -88,7 +88,7 @@ material = SubResource( 4 )
 rotation = 1.5708
 texture = ExtResource( 2 )
 hframes = 7
-frame = 3
+frame = 6
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Visibility", "Z" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
