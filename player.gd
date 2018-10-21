@@ -20,6 +20,9 @@ var shoot_time=99999 #time since last shot
 
 var anim=""
 
+var health = 20
+var max_health = 20
+
 #cache the sprite here for fast access (we will set scale to flip it often)
 onready var sprite = $sprite
 
@@ -192,3 +195,7 @@ func update_userinterface():
 	var elementUI = get_parent().get_node("user_interface/Element")
 	if elementUI != null:
 		elementUI.text = "Element: " + getElementStr(currentElement)
+	
+	var healthBar = get_parent().get_node("user_interface/HealthBar_Background/HealthBar")
+	healthBar.value = health
+	healthBar.max_value = max_health

@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://moving_platform.gd" type="Script" id=1]
+[ext_resource path="res://assets/platformer.png" type="Texture" id=2]
+
+[node name="moving_platform" type="Node2D"]
+script = ExtResource( 1 )
+motion = Vector2( 0, 0 )
+cycle = 1.0
+
+[node name="platform" type="KinematicBody2D" parent="."]
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+motion/sync_to_physics = false
+
+[node name="Sprite" type="Sprite" parent="platform"]
+position = Vector2( 32, 0 )
+rotation = 1.5708
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 208, 0, 16, 32 )
+_sections_unfolded = [ "Region", "Transform" ]
+
+[node name="Sprite2" type="Sprite" parent="platform"]
+position = Vector2( -32, 0 )
+rotation = -1.5708
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 208, 0, 16, 32 )
+_sections_unfolded = [ "Region", "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="platform"]
+build_mode = 0
+polygon = PoolVector2Array( -60, -10, 60, -10, 60, 10, -60, 10 )
+_sections_unfolded = [ "polygon" ]
+
